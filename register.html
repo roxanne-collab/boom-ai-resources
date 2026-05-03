@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Register · AI Foundations & Applied Use</title>
+<meta name="description" content="Choose how to register for Boom Business Solutions' AI Foundations & Applied Use program." />
+<link rel="icon" href="brand/boom-icon-color.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  :root{
+    --onyx:#0E0E10;
+    --onyx-90:#1B1B1E;
+    --onyx-70:#3A3A3F;
+    --onyx-50:#76767A;
+    --onyx-30:#B5B5B7;
+    --onyx-10:#E6E6E7;
+    --paper:#FFFFFF;
+    --paper-tint:#F7F7F8;
+    --sapphire:#008EAA;
+    --sapphire-deep:#006B80;
+  }
+  body{
+    background:var(--paper);
+    color:var(--onyx);
+    font-family:"Catamaran",-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .nav{
+    background:var(--paper);
+    border-bottom:1px solid var(--onyx-10);
+  }
+  .nav-inner{
+    max-width:1240px;
+    height:80px;
+    margin:0 auto;
+    padding:0 32px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+  .logo{height:40px;display:block}
+  .logo img{height:100%;width:auto;display:block}
+  .nav-link{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--onyx-70);
+  }
+  .nav-link:hover{color:var(--onyx)}
+  .hero{
+    background:var(--onyx);
+    color:var(--paper);
+    padding:120px 0 96px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:0;
+    height:0;
+    border-left:260px solid transparent;
+    border-bottom:260px solid var(--sapphire);
+    opacity:.95;
+  }
+  .container{max-width:1240px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+  .triangle{
+    width:0;
+    height:0;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-left:14px solid var(--sapphire);
+    display:inline-block;
+    flex-shrink:0;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    font-weight:700;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--sapphire);
+    margin-bottom:28px;
+  }
+  h1{
+    max-width:980px;
+    margin:0;
+    font-size:clamp(48px,8vw,112px);
+    line-height:.92;
+    letter-spacing:-.025em;
+    text-transform:uppercase;
+    font-weight:900;
+    text-wrap:balance;
+  }
+  .hero-copy{
+    max-width:680px;
+    color:var(--onyx-30);
+    font-size:clamp(18px,1.5vw,22px);
+    margin:32px 0 0;
+  }
+  .rate-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:40px;
+    align-items:center;
+  }
+  .rate-pill{
+    background:var(--sapphire);
+    color:var(--paper);
+    padding:8px 14px;
+    font-weight:900;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+  .rate-note{
+    color:var(--onyx-30);
+    font-weight:600;
+    font-size:14px;
+  }
+  .section{padding:96px 0}
+  .path-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+  }
+  .path-card{
+    min-height:430px;
+    border:2px solid var(--onyx);
+    background:var(--paper);
+    padding:32px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    overflow:hidden;
+  }
+  .path-card.primary{
+    background:var(--onyx);
+    color:var(--paper);
+    border-color:var(--onyx);
+  }
+  .path-card.primary::after{
+    content:"";
+    position:absolute;
+    right:-1px;
+    bottom:-1px;
+    width:0;
+    height:0;
+    border-right:120px solid var(--sapphire);
+    border-top:120px solid transparent;
+  }
+  .card-num{
+    color:var(--sapphire);
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    margin-bottom:28px;
+  }
+  .path-card h2{
+    margin:0 0 18px;
+    font-size:clamp(28px,3vw,42px);
+    line-height:1;
+    letter-spacing:-.02em;
+    text-transform:uppercase;
+    font-weight:900;
+  }
+  .price{
+    font-size:52px;
+    line-height:1;
+    font-weight:900;
+    letter-spacing:-.03em;
+    margin:0 0 20px;
+  }
+  .path-card p{
+    margin:0;
+    color:var(--onyx-70);
+    font-size:17px;
+  }
+  .path-card.primary p{color:var(--onyx-30)}
+  .details{
+    margin:28px 0 0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:12px;
+  }
+  .details li{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    color:var(--onyx-70);
+    font-weight:600;
+    font-size:15px;
+  }
+  .primary .details li{color:var(--onyx-30)}
+  .details .triangle{margin-top:6px}
+  .btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    min-height:54px;
+    margin-top:auto;
+    padding:0 22px;
+    border:2px solid var(--onyx);
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    transition:transform .15s ease,background .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{
+    background:var(--sapphire);
+    color:var(--paper);
+    border-color:var(--sapphire);
+  }
+  .btn-primary:hover{background:var(--sapphire-deep);border-color:var(--sapphire-deep)}
+  .btn-dark{background:var(--onyx);color:var(--paper)}
+  .btn-dark:hover{background:var(--onyx-90)}
+  .btn-outline{background:var(--paper);color:var(--onyx)}
+  .btn-outline:hover{background:var(--onyx);color:var(--paper)}
+  .support{
+    border-top:1px solid var(--onyx-10);
+    padding:72px 0;
+    background:var(--paper-tint);
+  }
+  .support-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:64px;
+    align-items:center;
+  }
+  .support h2{
+    margin:0 0 18px;
+    font-size:clamp(34px,4vw,62px);
+    line-height:1;
+    text-transform:uppercase;
+    font-weight:900;
+    letter-spacing:-.02em;
+  }
+  .support p{max-width:560px;margin:0;color:var(--onyx-70);font-size:18px}
+  .mini-card{
+    background:var(--paper);
+    border:2px solid var(--onyx);
+    padding:28px;
+  }
+  .mini-card strong{
+    display:block;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--sapphire);
+    margin-bottom:10px;
+  }
+  .footer{
+    background:var(--onyx);
+    color:var(--paper);
+    padding:44px 0;
+  }
+  .footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+    color:var(--onyx-30);
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.04em;
+  }
+  .footer-logo{height:42px}
+  .footer-logo img{height:100%;width:auto;display:block}
+  @media (max-width:900px){
+    .hero{padding:88px 0 72px}
+    .hero::after{border-left-width:150px;border-bottom-width:150px}
+    .path-grid,.support-grid{grid-template-columns:1fr}
+    .path-card{min-height:auto}
+    .nav-inner{height:72px;padding:0 24px}
+    .section{padding:64px 0}
+  }
+  @media (max-width:560px){
+    .container{padding:0 24px}
+    .hero-copy{font-size:18px}
+    .path-card{padding:28px 24px}
+    .price{font-size:44px}
+    .nav-link{display:none}
+  }
+</style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="Boom Business Solutions">
+        <img src="brand/boom-logo-color.png" alt="Boom Business Solutions" />
+      </a>
+      <a class="nav-link" href="index.html">Back to resources</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow"><span class="triangle"></span>Register · GMID rate</span>
+        <h1>Choose how you want to register.</h1>
+        <p class="hero-copy">
+          Pay online, request an invoice, or talk with Roxanne first. Pick the path that works best for you or your organization.
+        </p>
+        <div class="rate-row">
+          <span class="rate-pill">$1,097 GMID rate</span>
+          <span class="rate-note">Available until May 16, 2026 · Regular rate $1,497</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="path-grid">
+          <article class="path-card primary">
+            <span class="card-num">Option 01</span>
+            <h2>Pay by credit card.</h2>
+            <p class="price">$1,097</p>
+            <p>Secure your seat online using Wix Pay.</p>
+            <ul class="details">
+              <li><span class="triangle"></span><span>Fastest way to register</span></li>
+              <li><span class="triangle"></span><span>Best for individual seats</span></li>
+              <li><span class="triangle"></span><span>Confirmation sent after checkout</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#">Pay by credit card</a>
+          </article>
+
+          <article class="path-card">
+            <span class="card-num">Option 02</span>
+            <h2>Request an invoice.</h2>
+            <p>For organizations, teams, POs, finance departments, or anyone who needs payment handled manually.</p>
+            <ul class="details">
+              <li><span class="triangle"></span><span>Great for multiple seats</span></li>
+              <li><span class="triangle"></span><span>Collect billing details and PO notes</span></li>
+              <li><span class="triangle"></span><span>Someone from Boom follows up</span></li>
+            </ul>
+            <a class="btn btn-dark" href="#">Request an invoice</a>
+          </article>
+
+          <article class="path-card">
+            <span class="card-num">Option 03</span>
+            <h2>Chat with Roxanne.</h2>
+            <p>Ask about fit, timing, group registration, or whether this is the right program for where you are with AI.</p>
+            <ul class="details">
+              <li><span class="triangle"></span><span>Best if you have questions first</span></li>
+              <li><span class="triangle"></span><span>Useful for teams and leadership buy-in</span></li>
+              <li><span class="triangle"></span><span>No pressure, just clarity</span></li>
+            </ul>
+            <a class="btn btn-outline" href="#">Chat with Roxanne</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="support">
+      <div class="container">
+        <div class="support-grid">
+          <div>
+            <span class="eyebrow"><span class="triangle"></span>Before you choose</span>
+            <h2>Not sure which path fits?</h2>
+            <p>
+              If you are registering a team, need approval, or want to confirm whether the program is right for your role, start with a conversation.
+            </p>
+          </div>
+          <div class="mini-card">
+            <strong>Program details</strong>
+            <p>
+              Six live online sessions, 90 minutes each. Designed for event and meeting pros who want practical AI workflows they can actually use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="footer-logo" href="https://boombusinesssolutions.com" aria-label="Boom Business Solutions">
+        <img src="brand/boom-logo-white.png" alt="Boom Business Solutions" />
+      </a>
+      <span>AI Foundations & Applied Use · GMID rate until May 16, 2026</span>
+    </div>
+  </footer>
+</body>
+</html>

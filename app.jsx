@@ -758,7 +758,7 @@ function App() {
                     <a href="register.html" className="btn btn-primary">
                       Register now <span className="arrow">→</span>
                     </a>
-                    <a href="#contact" className="btn btn-ghost-light">
+                    <a href="mailto:roxanne@boombusinesssolutions.com" className="btn btn-ghost-light">
                       Ask a question
                     </a>
                   </div>
@@ -840,9 +840,6 @@ function App() {
                 <div className="hero-cta">
                   <a href="#prompts" className="btn btn-onyx">
                     Get the seven prompts <span className="arrow">→</span>
-                  </a>
-                  <a href="#program" className="btn btn-ghost">
-                    See the program
                   </a>
                 </div>
               </div>
@@ -1056,7 +1053,7 @@ function App() {
               <a href="register.html" className="btn btn-primary">
                 Register · $1,097 GMID rate <span className="arrow">→</span>
               </a>
-              <a href="mailto:hello@boombusinesssolutions.com" className="btn btn-ghost-light">
+              <a href="mailto:roxanne@boombusinesssolutions.com" className="btn btn-ghost-light">
                 Email Roxanne
               </a>
             </div>
@@ -1088,7 +1085,7 @@ function App() {
                 <div className="footer-links">
                   <a className="footer-link" href="https://boombusinesssolutions.com" target="_blank" rel="noopener">boombusinesssolutions.com</a>
                   <a className="footer-link" href="register.html">/ai · the program</a>
-                  <a className="footer-link" href="mailto:hello@boombusinesssolutions.com">Email Roxanne</a>
+                  <a className="footer-link" href="mailto:roxanne@boombusinesssolutions.com">Email Roxanne</a>
                 </div>
               </div>
             </div>

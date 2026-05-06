@@ -11,6 +11,8 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "darkSections": true
 }/*EDITMODE-END*/;
 
+const REGISTER_URL = 'https://gmidspecial.register.boombusinesssolutions.com/';
+
 // ──────────────────────────────────────────────────────────────────────────
 // The seven prompts from the talk
 
@@ -700,7 +702,7 @@ function App() {
             <a className="nav-link" href="#talk">The talk</a>
             <a className="nav-link" href="#prompts">Prompts</a>
             <a className="nav-link" href="#program">Program</a>
-            <a className="btn btn-primary" href="#program" style={{height:44,padding:'0 20px',fontSize:11}}>
+            <a className="btn btn-primary" href={REGISTER_URL} style={{height:44,padding:'0 20px',fontSize:11}}>
               Register · GMID rate
             </a>
           </div>
@@ -755,7 +757,7 @@ function App() {
                   <span className="price-deadline">Deadline · May 16, 2026</span>
 
                   <div style={{display:'flex',gap:12,marginTop:32,flexWrap:'wrap'}}>
-                    <a href="register.html" className="btn btn-primary">
+                    <a href={REGISTER_URL} className="btn btn-primary">
                       Register now <span className="arrow">→</span>
                     </a>
                     <a href="mailto:roxanne@boombusinesssolutions.com" className="btn btn-ghost-light">
@@ -1050,7 +1052,7 @@ function App() {
               Start there. The rest follows. And if you want help getting there — that's what the program is for.
             </p>
             <div className="reveal" style={{display:'flex',gap:14,flexWrap:'wrap'}}>
-              <a href="register.html" className="btn btn-primary">
+              <a href={REGISTER_URL} className="btn btn-primary">
                 Register · $1,097 GMID rate <span className="arrow">→</span>
               </a>
               <a href="mailto:roxanne@boombusinesssolutions.com" className="btn btn-ghost-light">
@@ -1084,7 +1086,7 @@ function App() {
                 <h4 className="footer-h">Connect</h4>
                 <div className="footer-links">
                   <a className="footer-link" href="https://boombusinesssolutions.com" target="_blank" rel="noopener">boombusinesssolutions.com</a>
-                  <a className="footer-link" href="register.html">/ai · the program</a>
+                  <a className="footer-link" href={REGISTER_URL}>/ai · the program</a>
                   <a className="footer-link" href="mailto:roxanne@boombusinesssolutions.com">Email Roxanne</a>
                 </div>
               </div>
